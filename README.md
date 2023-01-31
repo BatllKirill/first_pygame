@@ -1,2 +1,2 @@
 # first_pygame
-My first py game
+Something in pygame. Learning python
