@@ -22,7 +22,8 @@ def background ():
     rect(screen,BROWNGOLDEN,[(0,450),(600,900)])
     
 def window(move):
-    polygon(screen,BLUE,[(373,36),(560,36),(560,400),(373,400)]) #big xy xy xy xy
+    x1=373+move;x2=560+move;x3=560+move;x4=373+move    
+    polygon(screen,BLUE,[(x1,36),(x2,36),(x3,400),(x4,400)]) #big xy xy xy xy
     x=390+move; y=50; width=60; heigt=60
     rect(screen,BLUEAQUA,[(x,y),(width,heigt)]) #small window 
     x=390+move; y=150; width=60; heigt=60
@@ -79,12 +80,10 @@ def cat_body ():
     circle(screen,BROWNCAT,(x,y),radius,widht) #head
     x=105; y=600; radius=50; widht=1
     circle(screen,BLACK,(x,y),radius,widht) #head
-    
-def ball():
-    circle
-background()
-window(1)
 
+background()
+window(0)
+window(-200)
 cat_body ()
     
 pygame.display.update()   # после чего, чтобы они отобразились на экране, экран нужно обновить:
